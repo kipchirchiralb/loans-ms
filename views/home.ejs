@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loans MS</title>
+  </head>
+  <body>
+    <%- include("_header.ejs")%>
+    <h2>Members</h2>
+
+    <ol>
+
+      <% for(let i = 0; i<members.length; i++) { %>
+
+        <li> <%= members[i].name  %>  --- <%= members[i].email %> </li>
+        
+      <% } %>
+
+    </ol>
+
+  </body>
+</html>
